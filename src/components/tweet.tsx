@@ -2,7 +2,7 @@ import { styled } from 'styled-components'
 import { ITweet } from './timeline'; // 현재 파일에서의 상대 경로 사용
 import { auth, db, storage } from '../routes/firebase';
 import { deleteDoc, doc } from 'firebase/firestore';
-import { deleteObject } from 'firebase/storage';
+import { deleteObject, ref } from 'firebase/storage';
 
 
 const Wrapper = styled.div`
@@ -88,3 +88,8 @@ export default function Tweet(props: ITweet) {
     </Wrapper>
   )
 }
+
+
+
+
+
